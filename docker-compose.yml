@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: zjmf@1234
+      MYSQL_DATABASE: zjmf
+      MYSQL_USER: zjmf
+      MYSQL_PASSWORD: zjmf@1234
+    volumes:
+      - /root/zjmfdb:/var/lib/mysql

@@ -1,0 +1,58 @@
+<!-- powered by xiobb 2022.12.23. -->
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>GoPanel</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+        }
+
+        #table,
+        table {
+            margin: 0 auto;
+        }
+
+        #table {
+            font-size: 118%;
+            font-family: '宋体',SimSun;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table">
+        <center>
+            <p><b>下面是您的LXC VPS管理信息</b></p>
+            <table border="1" align="center">
+                <tr>
+                    <td>
+                        &nbsp;面板地址&nbsp;
+                    </td>
+                    <td style="text-align: left;">&nbsp;<a href="{$url}" target="_blank">{$url}</a>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;用户名&nbsp;
+                    </td>
+                    <td style="text-align: left;">&nbsp;{$username}&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;密码&nbsp;
+                    </td>
+                    <td style="text-align: left;">&nbsp;{$password}&nbsp;</td>
+                </tr>
+            </table>
+            <p>
+                <b style="color: red;"><i>!</i></b> Tips: 如果在控制面板[领域]中有两个英文选项，请选择[Proxmox VE authentication server]来正常登入.
+            </p>
+        </center>
+    </div>
+</body>
+
+</html>

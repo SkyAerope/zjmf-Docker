@@ -1,0 +1,878 @@
+.dialog-title {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 24px;
+  color: #171725;
+}
+.base-color {
+  color: #0058FF;
+  cursor: pointer;
+}
+.ips p {
+  margin: 0;
+}
+.dialog-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.dialog-footer .btn-ok {
+  height: 46px;
+  width: 112px;
+  background: #0058FF;
+  border-radius: 0.03rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog-footer .btn-no {
+  height: 46px;
+  width: 112px;
+  background: #E7E7E7;
+  border-radius: 0.03rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myPage {
+  margin-bottom: 26px;
+}
+.myPage .el-pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.el-pagination .page-total {
+  margin: 0 auto 0 22px;
+  font-size: 12px !important;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #757575;
+}
+.template .el-main {
+  padding-right: 210px;
+}
+.template .main-card {
+  padding: 0 120px;
+}
+.template .main-card .card-top {
+  background: #fff;
+  padding: 20px 40px;
+}
+.template .main-card .card-top .top-operation .operation-row1 {
+  display: flex;
+  align-items: end;
+}
+.template .main-card .card-top .top-operation .operation-row1 .host-status {
+  width: 59px;
+  height: 26px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.template .main-card .card-top .top-operation .operation-row1 .Active {
+  color: #3dd598;
+  background: rgba(61, 213, 152, 0.12);
+}
+.template .main-card .card-top .top-operation .operation-row1 .Unpaid {
+  color: #F64E60;
+  background: #FFE2E5;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-operation .operation-row1 .Pending {
+  color: #3699FF;
+  background: #E1F0FF;
+}
+.template .main-card .card-top .top-operation .operation-row1 .Suspended {
+  color: #F99600;
+  background: #FFF4DE;
+}
+.template .main-card .card-top .top-operation .operation-row1 .Deleted {
+  color: #9696A3;
+  background: #F2F2F7;
+}
+.template .main-card .card-top .top-operation .operation-row1 .Failed {
+  color: #FFA800;
+  background: #FFF4DE;
+}
+.template .main-card .card-top .top-operation .operation-row1 .back-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+  align-self: center;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-operation .operation-row1 .top-product-name {
+  font-size: 28px;
+  color: #171725;
+  opacity: 1;
+}
+.template .main-card .card-top .top-operation .operation-row1 .top-area {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-operation .operation-row1 .top-area .country-img {
+  width: 22px;
+  height: 14px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.template .main-card .card-top .top-operation .operation-row1 .top-area .country,
+.template .main-card .card-top .top-operation .operation-row1 .top-area .city,
+.template .main-card .card-top .top-operation .operation-row1 .top-area .area {
+  font-size: 15px;
+  color: #1E2736;
+}
+.template .main-card .card-top .top-operation .operation-row2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-left {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-left .name,
+.template .main-card .card-top .top-operation .operation-row2 .row2-left .ip {
+  font-size: 16px;
+  color: #8692B0;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-left .all-ip {
+  padding: 0 20px;
+  height: 24px;
+  line-height: 24px;
+  background: #0058FF;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-left .name {
+  padding-right: 21px;
+  border-right: 1px solid #E6E7EB;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-left .ip {
+  margin-left: 20px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .info-box {
+  font-size: 14px;
+  color: #8692B0;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .info-box .green-div {
+  font-size: 0;
+  display: inline-block;
+  width: 107px;
+  height: 12px;
+  background: #ECEEF5;
+  margin-right: 8px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .info-box .percentage-div {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  background: #3dd598;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .info-box .memory-box {
+  margin-top: 8px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .el-popover__reference-wrapper {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .refund {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .refund-status {
+  height: 14px;
+  line-height: 14px;
+  padding: 0.04rem 0.14rem;
+  display: inline-block;
+  border: 1px solid #F0142F;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #F0142F;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .refund-stop-btn {
+  font-size: 12px;
+  color: #0058FF;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .refund-btn {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #0058FF;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #0058FF;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 30px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right img {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right i {
+  font-size: 28px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .console-img {
+  margin-right: 30px;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .on-off {
+  margin-right: 30px;
+  display: flex;
+}
+.template .main-card .card-top .top-operation .operation-row2 .row2-right .fault {
+  margin-left: 30px;
+}
+.template .main-card .card-top .top-operation .operation-row3 {
+  padding-left: 50px;
+}
+.template .main-card .card-top .top-operation .operation-row3 .no-notes {
+  color: #0058FF;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-operation .operation-row3 .yes-notes {
+  cursor: pointer;
+}
+.template .main-card .card-top .top-operation .operation-row3 .yes-notes .notes-icon {
+  color: #0058FF;
+}
+.template .main-card .card-top .top-operation .operation-row3 .yes-notes .notes-text {
+  color: #1E2736;
+}
+.template .main-card .card-top .top-msg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.template .main-card .card-top .top-msg .help {
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #0058FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0058FF;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-msg .msg-l {
+  width: 650px;
+  border: 0.01rem solid #e6e7eb;
+  opacity: 1;
+  border-radius: 0.03rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.template .main-card .card-top .top-msg .msg-l .l-t {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.template .main-card .card-top .top-msg .msg-l .l-t .l-t-l .l-t-l-text {
+  color: #1e2736;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.template .main-card .card-top .top-msg .msg-l .l-t .r-t-r {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  padding-bottom: 24px;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b .info-item {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b .info-item .eyes {
+  vertical-align: text-top;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b .info-item .red {
+  color: #f0142f !important;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b .info-item .label {
+  min-width: 60px;
+  font-size: 14px;
+  text-align: left;
+  color: #1e2736;
+}
+.template .main-card .card-top .top-msg .msg-l .l-b .info-item .value {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #1e2736;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.template .main-card .card-top .top-msg .msg-r {
+  width: 635px;
+  border: 1px solid #E6E7EB;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-l .r-t-l-text {
+  color: #1E2736;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-l .help {
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #0058FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0058FF;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  padding-left: 33px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .help {
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #0058FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0058FF;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .r-t-r-text {
+  font-size: 14px;
+  color: #1E2736;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .renew-btn {
+  font-size: 14px;
+  color: #0058FF;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .renew-btn-disable {
+  width: 40px;
+  height: 24px;
+  background: rgba(102, 107, 128, 0.1);
+  border-radius: 3px;
+  font-size: 12px;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .refund-status {
+  height: 24px;
+  border: 1px solid #F0142F;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #F0142F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .refund-stop-btn {
+  font-size: 12px;
+  color: #0058FF;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .refund-btn {
+  color: #0058FF;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b {
+  margin-top: 40px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row {
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 33px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .red {
+  color: #F0142F !important;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .label {
+  width: 110px;
+  font-size: 14px;
+  text-align: left;
+  color: #1E2736;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .value {
+  font-size: 14px;
+  margin-left: 30px;
+  color: #1E2736;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .renew-btn {
+  width: 50px;
+  padding: 0 5px;
+  height: 24px;
+  background: #0058FF;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .renew-btn-disable {
+  width: 50px;
+  padding: 0 5px;
+  height: 24px;
+  background: rgba(102, 107, 128, 0.1);
+  border-radius: 3px;
+  font-size: 12px;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-r {
+  display: flex;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-r .label {
+  width: 110px;
+  font-size: 14px;
+  text-align: left;
+  color: #1E2736;
+}
+.template .main-card .card-top .top-msg .msg-r .r-b .row .row-r .value {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #1E2736;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.template .main-card .card-top .refund-msg {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.template .main-card .card-top .refund-msg .refund-success {
+  width: 634px;
+  height: 46px;
+  background: #E1F0FF;
+  border: 1px solid #3699FF;
+  border-radius: 3px;
+  color: #3699FF;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+.template .main-card .card-top .refund-msg .refund-fail {
+  width: 634px;
+  height: 46px;
+  background: #FDE6E9;
+  border: 1px solid rgba(240, 20, 47, 0.2);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  color: #f64e60;
+  margin-top: 4px;
+}
+.template .main-card .card-top .refund-msg .refund-fail .reason-text {
+  color: #0058ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.template .main-card .card-top .tabs {
+  margin-top: 60px;
+}
+.template .main-card .card-top .el-dialog__body {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.template .main-card .card-top .dialog-main {
+  margin-top: 40px;
+}
+.template .main-card .card-top .dialog-main .el-input__inner {
+  height: 52px;
+}
+.template .main-card .card-top .dialog-main .label {
+  font-size: 16px;
+  color: #1E2736;
+  margin-bottom: 10px;
+}
+.template .main-card .card-top .dialog-main .label:not(:first-child) {
+  margin-top: 20px;
+}
+.template .main-card .card-top .dialog-footer .btn-no {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.template .main-card .card-top .dialog-footer .btn-ok {
+  cursor: pointer;
+}
+.template .main-card .card-top .reinstall-dialog .os-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.template .main-card .card-top .reinstall-dialog .os-content .os-select {
+  margin-left: 10px;
+}
+.template .main-card .card-top .reinstall-dialog .os-content .os-select .os-group-img {
+  width: 36px;
+  height: 36px;
+}
+.template .main-card .card-top .reinstall-dialog .os-content .el-input__prefix {
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .reinstall-dialog .os-content .os-group-select {
+  margin-left: 0;
+}
+.template .main-card .card-top .reinstall-dialog .os-content .os-group-select .el-input__inner {
+  padding-left: 50px;
+}
+.template .main-card .card-top .reinstall-dialog .el-input__suffix {
+  right: 0;
+}
+.template .main-card .card-top .reinstall-dialog .pass-btn {
+  width: 112px;
+  height: 100%;
+  background: #EEF4FF;
+  border-radius: 0rem 3px 3px 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #4E5259;
+  border-top: 1px solid #E6E7EB;
+  border-right: 1px solid #E6E7EB;
+  border-bottom: 1px solid #E6E7EB;
+  cursor: pointer;
+}
+.template .main-card .card-top .reinstall-dialog .pass-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.template .main-card .card-top .reinstall-dialog .pass-content .pass-select .el-input__inner {
+  width: 135px;
+}
+.template .main-card .card-top .reinstall-dialog .pass-content .help-icon {
+  font-size: 14px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #DBDBDD;
+  cursor: pointer;
+}
+.template .main-card .card-top .reinstall-dialog .pass-content .key-select {
+  width: 100%;
+}
+.template .main-card .card-top .reinstall-dialog .pass-content .key-select .el-select {
+  width: 100%;
+}
+.template .main-card .card-top .reinstall-dialog .alert {
+  margin-top: 20px;
+  padding: 0;
+}
+.template .main-card .card-top .reinstall-dialog .alert .remind {
+  height: 46px;
+  width: calc(100% - 16px);
+  background: #FDE9CB;
+  border: 1px solid rgba(249, 150, 0, 0.2);
+  border-radius: 3px;
+  color: #F99600;
+  line-height: 46px;
+  padding-left: 16px;
+}
+.template .main-card .card-top .reinstall-dialog .pay-img {
+  display: flex;
+  align-items: center;
+  background: #fff4de;
+  border: 1px solid #ffa800;
+  border-radius: 4px;
+  color: #525666;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-top: 20px;
+}
+.template .main-card .card-top .reinstall-dialog .pay-img .img-buy-btn {
+  background: #feb63b;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 13px 16px;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item {
+  width: 160px;
+  min-height: 83px;
+  border: 1px solid #E6E7EB;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item:nth-child(3) {
+  margin-right: 0;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item:nth-child(6) {
+  margin-right: 0;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item .item-top {
+  font-size: 15px;
+  color: #1E2736;
+  margin-top: 8px;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item .item-bottom {
+  font-size: 15px;
+  color: #0058FF;
+  margin-top: 4px;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item .check {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  color: #FFF;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-item .item-origin-price {
+  text-decoration: line-through;
+  font-size: 15px;
+  color: #8692B0;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-active {
+  box-shadow: 0rem 0rem 6px rgba(0, 0, 0, 0.12);
+}
+.template .main-card .card-top .renew-dialog .dialog-main .renew-content .renew-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-bottom: 24px solid #0058FF;
+  border-left: 24px solid transparent;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .pay-content {
+  border: 1px solid #E6E7EB;
+  border-radius: 3px;
+  padding: 20px 0;
+  padding-right: 30px;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .pay-content .pay-price {
+  display: flex;
+  text-align: right;
+  flex-direction: row;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .pay-content .pay-price .text {
+  font-size: 14px;
+  color: #1E2736;
+  margin-right: 8px;
+}
+.template .main-card .card-top .renew-dialog .dialog-main .pay-content .pay-price .money {
+  width: 100%;
+  font-size: 28px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #F0142F;
+}
+.template .main-card .card-top .refund-dialog .host-content {
+  background: rgba(102, 107, 128, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+.template .main-card .card-top .refund-dialog .host-content .host-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.template .main-card .card-top .refund-dialog .host-content .host-item:first-child {
+  margin-top: 20px;
+}
+.template .main-card .card-top .refund-dialog .host-content .host-item:last-child {
+  margin-bottom: 20px;
+}
+.template .main-card .card-top .refund-dialog .host-content .host-item .left {
+  color: #8692B0;
+}
+.template .main-card .card-top .refund-dialog .host-content .host-item .right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  color: #4E5259;
+}
+.template .main-card .card-top .refund-dialog .amount-content {
+  height: 46px;
+  background: rgba(102, 107, 128, 0.08);
+  border: 1px solid #E6E7EB;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+.template .main-card .card-top .refund-dialog .el-select {
+  width: 100%;
+}
+.template .main-card .card-top .refund-dialog .el-select .el-input {
+  width: 100%;
+}
+.text-btn {
+  cursor: pointer;
+  color: #0058FF;
+}
+.sure-remind {
+  display: flex;
+  align-items: center;
+}
+.sure-remind .text {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.sure-remind .status {
+  color: #0058ff;
+  margin-right: 5px;
+}
+.sure-remind .sure-btn {
+  width: 60px;
+  height: 32px;
+  background: #0058FF;
+  opacity: 1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #FFF;
+  margin-left: 10px;
+}
+.option-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.option-label .option-img {
+  width: 24px;
+  height: 24px;
+}
+.option-label .option-text {
+  margin-left: 10px;
+}
+@media screen and (max-width: 750px) {
+  .template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .renew-btn {
+    width: 80px;
+    height: 48px;
+  }
+  .template .main-card .card-top .top-msg .msg-l .system-t .btn-port .re-btn {
+    height: 48px;
+  }
+  .main-card .manage-content .el-row .el-col:nth-child(2) .manage-item {
+    margin: 0 !important;
+  }
+  .main-card .manage-content .manage-item .item-top-btn {
+    height: 50px;
+  }
+  .manage-content .el-row .el-col-8 {
+    width: 100%;
+  }
+  .main-card .manage-content .el-row .el-col:nth-child(3) .manage-item {
+    float: none !important;
+  }
+  .template .main-card .card-top .tabs {
+    width: 650px;
+  }
+  .template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .help {
+    width: 24px;
+    height: 24px;
+  }
+  .template .main-card .card-top .top-operation {
+    width: 650px;
+  }
+  .template .main-card .card-top .top-operation .operation-row2 {
+    flex-wrap: wrap;
+  }
+  .template .main-card .card-top .top-msg {
+    display: block;
+  }
+  .template .main-card .card-top .top-msg .msg-r {
+    margin-top: 0.2rem;
+  }
+}

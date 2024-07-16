@@ -1,0 +1,1081 @@
+.dialog-title {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 24px;
+  color: #171725;
+}
+.base-color {
+  color: #0058FF;
+  cursor: pointer;
+}
+.ips{
+  p{
+    margin: 0;
+  }
+}
+.dialog-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.dialog-footer .btn-ok {
+  height: 46px;
+  width: 112px;
+  background: #0058FF;
+  border-radius: .03rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog-footer .btn-no {
+  height: 46px;
+  width: 112px;
+  background: #E7E7E7;
+  border-radius: .03rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myPage {
+  margin-bottom: 26px;
+}
+.myPage .el-pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.el-pagination .page-total {
+  margin: 0 auto 0 22px;
+  font-size: 12px !important;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #757575;
+}
+.template {
+  .el-main {
+    padding-right: 210px;
+  }
+
+  .main-card {
+    padding: 0 120px;
+    .card-top {
+      background: #fff;
+      padding: 20px 40px;
+      .top-operation {
+        .operation-row1 {
+          display: flex;
+          align-items: end;
+
+          .host-status {
+            width: 59px;
+            height: 26px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // align-self: center;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+          }
+
+          .Active {
+            color: rgba(61, 213, 152, 1);
+            background: rgba(61, 213, 152, .12);
+          }
+
+          .Unpaid {
+            color: #F64E60;
+            background: #FFE2E5;
+            cursor: pointer;
+          }
+
+          .Pending {
+            color: #3699FF;
+            background: #E1F0FF;
+          }
+
+          .Suspended {
+            color: #F99600;
+            background: #FFF4DE;
+          }
+
+          .Deleted {
+            color: #9696A3;
+            background: #F2F2F7;
+          }
+
+          .Failed {
+            color: #FFA800;
+            background: #FFF4DE;
+          }
+
+
+          .back-img {
+            width: 24px;
+            height: 24px;
+            margin-right: 25px;
+            align-self: center;
+            cursor: pointer;
+          }
+
+          .top-product-name {
+            font-size: 28px;
+            color: #171725;
+            opacity: 1;
+          }
+
+          .top-area {
+            display: flex;
+            align-items: center;
+            .country-img {
+              width: 22px;
+              height: 14px;
+              margin-left: 10px;
+              margin-right: 5px;
+            }
+
+            .country,
+            .city,
+            .area {
+              font-size: 15px;
+              color: #1E2736;
+            }
+          }
+        }
+
+        .operation-row2 {
+          display: flex;
+          justify-content: space-between;
+          padding-left: 50px;
+
+          .row2-left {
+            display: flex;
+            align-items: center;
+            .name,
+            .ip {
+              font-size: 16px;
+              color: #8692B0;
+            }
+            .all-ip{
+              padding: 0 20px;
+              height: 24px;
+              line-height: 24px;
+              background: #0058FF;
+              font-size: 12px;
+              color: #fff;
+              cursor: pointer;
+              border-radius: 3px;
+              margin-left: 20px;
+            }
+            .name {
+              padding-right: 21px;
+              border-right: 1px solid #E6E7EB;
+            }
+            .ip {
+              margin-left: 20px;
+            }
+          }
+
+          .row2-right {
+            display: flex;
+            align-items: center;
+
+            .info-box {
+              font-size: 14px;
+              color: #8692B0;
+
+              .green-div {
+                font-size: 0;
+                display: inline-block;
+                width: 107px;
+                height: 12px;
+                background: #ECEEF5;
+                margin-right: 8px;
+              }
+
+              .percentage-div {
+                display: inline-block;
+                height: 100%;
+                width: 0;
+                background: rgba(61, 213, 152, 1);
+              }
+
+              .memory-box {
+                margin-top: 8px;
+              }
+            }
+
+            .el-popover__reference-wrapper {
+              display: flex;
+              align-items: center;
+            }
+
+            .refund {
+              display: flex;
+              align-items: center;
+            }
+
+            .refund-status {
+              // width: 48px;
+              height: 14px;
+              line-height: 14px;
+              padding: .04rem .14rem;
+              display: inline-block;
+              border: 1px solid #F0142F;
+              border-radius: 3px;
+              font-size: 12px;
+              color: #F0142F;
+              margin-left: 10px;
+              margin-right: 8px;
+            }
+
+            .refund-stop-btn {
+              font-size: 12px;
+              color: #0058FF;
+              cursor: pointer;
+              // align-self: flex-end;
+              margin-right: 30px;
+            }
+
+            .refund-btn {
+              box-sizing: border-box;
+              padding: 8px 16px;
+              display: inline-block;
+              border: 1px solid #0058FF;
+              border-radius: 3px;
+              font-size: 14px;
+              margin-left: 10px;
+              color: #0058FF;
+              cursor: pointer;
+              margin-left: 8px;
+              margin-right: 30px;
+            }
+
+
+            img {
+              cursor: pointer;
+              width: 28px;
+              height: 28px;
+            }
+
+            i {
+              font-size: 28px;
+            }
+
+            .console-img {
+              margin-right: 30px;
+            }
+
+            .on-off {
+              margin-right: 30px;
+              display: flex;
+            }
+
+            .restart {}
+
+            .fault {
+              margin-left: 30px;
+            }
+          }
+        }
+
+        .operation-row3 {
+          padding-left: 50px;
+
+          .no-notes {
+            color: #0058FF;
+            cursor: pointer;
+          }
+
+          .yes-notes {
+            cursor: pointer;
+
+            .notes-icon {
+              color: #0058FF;
+            }
+
+            .notes-text {
+              color: #1E2736;
+            }
+          }
+
+          // 备注弹窗
+          .notes-dialog {}
+        }
+
+      }
+
+      .top-msg {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        .help {
+          margin-left: 8px;
+          width: 12px;
+          height: 12px;
+          border: 1px solid #0058FF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #0058FF;
+          border-radius: 50%;
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        .msg-l {
+          width: 650px;
+          border: .01rem solid #e6e7eb;
+          opacity: 1;
+          border-radius: .03rem;
+          display: flex;
+          flex-direction: column;
+          padding-left: 24px;
+          padding-right: 24px;
+
+          .l-t {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            .l-t-l {
+              .l-t-l-text {
+                color: #1e2736;
+                font-size: 18px;
+                margin-right: 10px;
+              }
+            }
+            .r-t-r {
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          .l-b {
+            margin-top: 40px;
+            // 每行三个 网格布局
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+            padding-bottom: 24px;
+
+            .info-item {
+              display: flex;
+              align-items: center;
+
+              .eyes {
+                vertical-align: text-top;
+                cursor: pointer;
+                margin-left: 3px;
+              }
+
+              .red {
+                color: #f0142f !important;
+              }
+
+              .label {
+                min-width: 60px;
+                font-size: 14px;
+                text-align: left;
+                color: #1e2736;
+              }
+
+              .value {
+                margin-left: 20px;
+                font-size: 14px;
+                color: #1e2736;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+
+
+        .msg-r {
+          width: 635px;
+          // height: 230px;
+          border: 1px solid #E6E7EB;
+          border-radius: 3px;
+          display: flex;
+          flex-direction: column;
+          padding-left: 24px;
+          padding-right: 24px;
+
+          .r-t {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            .r-t-l {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 50%;
+
+              .r-t-l-text {
+                color: #1E2736;
+                font-size: 18px;
+                margin-right: 10px;
+              }
+              .help {
+                margin-left: 8px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #0058FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #0058FF;
+                border-radius: 50%;
+                font-size: 12px;
+                cursor: pointer;
+              }
+
+            }
+
+            .r-t-r {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 50%;
+              padding-left: 33px;
+
+
+              .help {
+                margin-left: 8px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #0058FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #0058FF;
+                border-radius: 50%;
+                font-size: 12px;
+                cursor: pointer;
+              }
+
+              .r-t-r-text {
+                font-size: 14px;
+                color: #1E2736;
+              }
+
+              .renew-btn {
+                font-size: 14px;
+                color: #0058FF;
+                cursor: pointer;
+                margin-left: 10px;
+              }
+
+              .renew-btn-disable {
+                width: 40px;
+                height: 24px;
+                background: rgba(102, 107, 128, 0.1);
+                border-radius: 3px;
+                font-size: 12px;
+                color: #757575;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+              }
+
+              .refund-status {
+                // width: 48px;
+                height: 24px;
+                border: 1px solid #F0142F;
+                border-radius: 3px;
+                font-size: 12px;
+                color: #F0142F;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+              }
+
+              .refund-stop-btn {
+                font-size: 12px;
+                color: #0058FF;
+                cursor: pointer;
+                // align-self: flex-end;
+                margin-left: 8px;
+              }
+
+              .refund-btn {
+                color: #0058FF;
+                cursor: pointer;
+                margin-left: 8px;
+              }
+
+
+            }
+          }
+
+          .r-b {
+            margin-top: 40px;
+
+            .row {
+              margin-bottom: 20px;
+              display: flex;
+              column-gap: 33px;
+              margin-left: 0;
+              margin-right: 0;
+              .row-l {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+
+                .red {
+                  color: #F0142F !important;
+                }
+
+                .label {
+                  width: 110px;
+                  font-size: 14px;
+                  text-align: left;
+                  color: #1E2736;
+                }
+
+                .value {
+                  font-size: 14px;
+                  margin-left: 30px;
+                  color: #1E2736;
+
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+
+                .renew-btn {
+                  width: 50px;
+                  padding: 0 5px;
+                  height: 24px;
+                  background: #0058FF;
+                  font-size: 12px;
+                  color: #fff;
+                  cursor: pointer;
+                  margin-left: 10px;
+                  border-radius: 5px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+                .renew-btn-disable {
+                  width: 50px;
+                  padding: 0 5px;
+                  height: 24px;
+                  background: rgba(102, 107, 128, 0.1);
+                  border-radius: 3px;
+                  font-size: 12px;
+                  color: #757575;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 10px;
+                }
+              }
+
+              .row-r {
+                display: flex;
+
+                .label {
+                  width: 110px;
+                  font-size: 14px;
+                  text-align: left;
+                  color: #1E2736;
+                }
+
+                .value {
+                  font-size: 14px;
+                  margin-left: 10px;
+                  color: #1E2736;
+
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .refund-msg {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+
+        .refund-success {
+          width: 634px;
+          height: 46px;
+          background: #E1F0FF;
+          border: 1px solid #3699FF;
+          border-radius: 3px;
+          color: #3699FF;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+          margin-top: 4px;
+        }
+
+        .refund-fail {
+          width: 634px;
+          height: 46px;
+          background: #FDE6E9;
+          border: 1px solid rgba(240, 20, 47, 0.2);
+          border-radius: 3px;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+          color: rgba(246, 78, 96, 1);
+          margin-top: 4px;
+
+          .reason-text {
+            color: rgba(0, 88, 255, 1);
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+
+      .tabs {
+        margin-top: 60px;
+      }
+
+      // 弹窗相关
+      .el-dialog__body {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .dialog-main {
+        margin-top: 40px;
+
+        .el-input__inner {
+          height: 52px;
+        }
+
+        .label {
+          font-size: 16px;
+          color: #1E2736;
+          margin-bottom: 10px;
+
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .dialog-footer {
+        .btn-no {
+          margin-left: 12px;
+          cursor: pointer;
+        }
+
+        .btn-ok {
+          cursor: pointer;
+        }
+      }
+
+      .reinstall-dialog {
+
+        .os-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .os-select {
+            margin-left: 10px;
+
+            .os-group-img {
+              width: 36px;
+              height: 36px;
+            }
+          }
+          .el-input__prefix{
+            display: flex;
+            align-items: center;
+          }
+          .os-group-select {
+            margin-left: 0;
+
+            .el-input__inner {
+              padding-left: 50px;
+            }
+          }
+
+
+        }
+
+        .el-input__suffix {
+          right: 0;
+        }
+
+        .pass-btn {
+          width: 112px;
+          height: 100%;
+          background: #EEF4FF;
+          border-radius: 0rem 3px 3px 0rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          color: #4E5259;
+          border-top: 1px solid #E6E7EB;
+          border-right: 1px solid #E6E7EB;
+          border-bottom: 1px solid #E6E7EB;
+          cursor: pointer;
+        }
+
+        .pass-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .pass-select {
+            .el-input__inner {
+              width: 135px;
+            }
+          }
+
+          .help-icon {
+            font-size: 14px;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #DBDBDD;
+            cursor: pointer;
+          }
+
+
+
+          .key-select {
+            width: 100%;
+
+            .el-select {
+              width: 100%;
+            }
+          }
+        }
+
+        .alert {
+          margin-top: 20px;
+          padding: 0;
+          .remind {
+            height: 46px;
+            width: calc(100% - 16px);
+            background: #FDE9CB;
+            border: 1px solid rgba(249, 150, 0, 0.2);
+            border-radius: 3px;
+            color: #F99600;
+            line-height: 46px;
+            padding-left: 16px;
+          }
+        }
+
+        // 立即购买
+        .pay-img {
+          display: flex;
+          align-items: center;
+          background: #fff4de;
+          border: 1px solid #ffa800;
+          border-radius: 4px;
+          color: #525666;
+          font-size: 14px;
+          justify-content: space-between;
+          padding: 12px 20px;
+          margin-top: 20px;
+
+          .img-buy-btn {
+            background: #feb63b;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 1;
+            padding: 13px 16px;
+          }
+        }
+      }
+
+      // 续费弹窗
+      .renew-dialog {
+        .dialog-main {
+          .renew-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .renew-item {
+              width: 160px;
+              min-height: 83px;
+              border: 1px solid #E6E7EB;
+              border-radius: 3px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-right: 20px;
+              margin-bottom: 20px;
+              cursor: pointer;
+              position: relative;
+
+              &:nth-child(3) {
+                margin-right: 0;
+              }
+
+              &:nth-child(6) {
+                margin-right: 0;
+              }
+
+              .item-top {
+                font-size: 15px;
+                color: #1E2736;
+                margin-top: 8px;
+              }
+
+              .item-bottom {
+                font-size: 15px;
+                color: #0058FF;
+                margin-top: 4px;
+              }
+
+              .check {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 3;
+                color: #FFF;
+              }
+
+              .item-origin-price {
+                text-decoration: line-through;
+                font-size: 15px;
+                color: #8692B0;
+              }
+            }
+
+            .renew-active {
+              box-shadow: 0rem 0rem 6px rgba(0, 0, 0, 0.12);
+
+              &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                width: 0;
+                height: 0;
+                border-bottom: 24px solid #0058FF;
+                border-left: 24px solid transparent;
+
+              }
+            }
+          }
+
+          .pay-content {
+            border: 1px solid #E6E7EB;
+            border-radius: 3px;
+            padding: 20px 0;
+            padding-right: 30px;
+
+            .pay-price {
+              display: flex;
+              text-align: right;
+              flex-direction: row;
+
+              .text {
+                font-size: 14px;
+                color: #1E2736;
+                margin-right: 8px;
+              }
+
+              .money {
+                width: 100%;
+                font-size: 28px;
+                font-family: Helvetica;
+                font-weight: bold;
+                color: #F0142F;
+              }
+            }
+
+            .code-btn {
+              .add-icon {}
+            }
+          }
+        }
+      }
+
+      // 停用弹窗
+      .refund-dialog {
+        .host-content {
+          background: rgba(102, 107, 128, 0.08);
+          display: flex;
+          flex-direction: column;
+
+          .host-item {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-left: 30px;
+
+            &:first-child {
+              margin-top: 20px;
+            }
+
+            &:last-child {
+              margin-bottom: 20px;
+            }
+
+            .left {
+              color: #8692B0;
+            }
+
+            .right {
+              display: flex;
+              flex-direction: column;
+              margin-left: 34px;
+              color: #4E5259;
+
+            }
+          }
+        }
+
+        .amount-content {
+          height: 46px;
+          background: rgba(102, 107, 128, 0.08);
+          border: 1px solid #E6E7EB;
+          padding-left: 16px;
+          display: flex;
+          align-items: center;
+        }
+
+        .el-select {
+          width: 100%;
+
+          .el-input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-btn {
+  cursor: pointer;
+  color: #0058FF;
+}
+
+.sure-remind {
+  display: flex;
+  align-items: center;
+
+  .text {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .status {
+    color: rgba(0, 88, 255, 1);
+    margin-right: 5px;
+  }
+
+  .sure-btn {
+    width: 60px;
+    height: 32px;
+    background: #0058FF;
+    opacity: 1;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #FFF;
+    margin-left: 10px;
+  }
+}
+
+
+.option-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .option-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .option-text {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .template .main-card .card-top .top-msg .msg-r .r-b .row .row-l .renew-btn {
+    width: 80px;
+    height: 48px;
+  }
+
+  .template .main-card .card-top .top-msg .msg-l .system-t .btn-port .re-btn {
+    height: 48px;
+  }
+
+  .main-card .manage-content .el-row .el-col:nth-child(2) .manage-item {
+    margin: 0 !important;
+  }
+
+  .main-card .manage-content .manage-item .item-top-btn {
+    height: 50px;
+  }
+
+  .manage-content {
+    .el-row {
+      .el-col-8 {
+        width: 100%;
+      }
+    }
+  }
+
+  .main-card .manage-content .el-row .el-col:nth-child(3) .manage-item {
+    float: none !important;
+  }
+
+  .template .main-card .card-top .tabs {
+    width: 650px;
+  }
+
+  .template .main-card .card-top .top-msg .msg-r .r-t .r-t-r .help {
+    width: 24px;
+    height: 24px;
+  }
+
+  .template {
+    .main-card {
+      .card-top {
+        .top-operation {
+          width: 650px;
+
+          .operation-row2 {
+            flex-wrap: wrap;
+          }
+        }
+
+        .top-msg {
+          display: block;
+
+          .msg-r {
+            margin-top: .2rem;
+          }
+        }
+      }
+    }
+  }
+}
